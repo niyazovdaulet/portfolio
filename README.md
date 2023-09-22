@@ -8,7 +8,11 @@
 ## Clima App
 A beautiful weather app which allows to get the live weather data for the current location using the phone's GPS. Furthermore, you may type the name of the city you want to check for and get the weather  that way. On top of that, it is also dark mode enabled, which switches the app's interface accordingly.
 
-
+<p align="center">
+ <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+</p>
 
 
 
@@ -25,53 +29,38 @@ A beautiful weather app which allows to get the live weather data for the curren
 
 
 ## FlashChat App
-Creator View is an app developed by Sean Allen that helps YouTubers get a bigger picture of their business. 
-<br>I have had the opportunity to contribute to a few areas of this app. Check it out below!
+
+Flash Chat is an internet based messaging app similar to WhatsApp, Viber and etc. Here, I have used a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. An application that has an Authentication build-in. So you will be able to register and login. I believe one of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. Thus, in this App I get to grips with Table Views, creating custom cells, and making our own cloud-based backend database.
+Check it out below!
 
 
+<p align="center">
+ <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+</p>
 
-**My Contributions**
-- 🎨 Update Settings UI
-- ⭐️ Add Ratings prompt
-- ⚙️ Preference Screen for mac
-- ❇️ Widget
+
 
 **Tech Used**
-- 💿 Core Data
-- 🎨 SwiftUI
-- 🔲 WidgetKit
-
-
-
-
+- 📦 Cocoapods and Swift Package Manager
+- 💾 Firebase Firestore
+- 🎨 UiKit
+- ⭐️ Swift
+- 🗂️ MVC
+- ⚙️ Firebase Authentication
 
  
-
-
-
-
-**Tech Used**
-- 🎨 SwiftUI
-- ❤️‍🩹 HealthKit
-- 📊 Swift Charts
-- 🔔 Local Notifications
-- 🗂️ MVVM
-- 💾 App Storage
-
-
-
-
-
-**Tech Used**
-- 🎨 SwiftUI
-- 🍿 TMDB API
-- 👩‍🎨 MVVM
 
 
 ## BMI Calculator
 This is one of my first apps. A beautiful BMI Calculator App which will be able to calculate User's BMI. The goal of making the app was to learn more about Optionals, solidify my understanding of the MVC design pattern and to introduce the concept of Classes. 
 
-
+<p align="center">
+ <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
+<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+</p>
 
 **Tech Used**
 - 🎨 Swift
