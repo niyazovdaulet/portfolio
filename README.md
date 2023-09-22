@@ -9,9 +9,9 @@
 A beautiful weather app which allows to get the live weather data for the current location using the phone's GPS. Furthermore, you may type the name of the city you want to check for and get the weather  that way. On top of that, it is also dark mode enabled, which switches the app's interface accordingly.
 
 <p align="center">
- <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+ <img src="https://github.com/niyazovdaulet/portfolio/blob/master/Clima%20-%201.png", width="200"/>
+<img src="https://github.com/niyazovdaulet/portfolio/blob/master/Clima%20-%202.png", width="200"/>
+<img src="https://github.com/niyazovdaulet/portfolio/blob/master/Clima%20-%203.png", width="200"/>
 </p>
 
 
@@ -57,9 +57,9 @@ Check it out below!
 This is one of my first apps. A beautiful BMI Calculator App which will be able to calculate User's BMI. The goal of making the app was to learn more about Optionals, solidify my understanding of the MVC design pattern and to introduce the concept of Classes. 
 
 <p align="center">
- <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+ <img src="https://github.com/niyazovdaulet/portfolio/blob/master/BMI%20Calculator%20-%201.png", width="200"/>
+<img src="https://github.com/niyazovdaulet/portfolio/blob/master/BMI%20Calculator%20-%201%20Result.png", width="200"/>
+<img src="https://github.com/niyazovdaulet/portfolio/blob/master/BMI%20Calculator%20-%202%20Result.png", width="200"/>
 </p>
 
 **Tech Used**
