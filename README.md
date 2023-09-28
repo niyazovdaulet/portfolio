@@ -36,9 +36,10 @@ Check it out below!
 
 
 <p align="center">
- <img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/d26e2525-5b46-4814-ad01-b2141f3a4fcf", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/142c72ae-ffa2-4759-9c47-fc6d65d91316", width="200"/>
-<img src="https://github.com/brittanyarima/iOS-Developer-Portfolio/assets/76922883/2edf6ae3-4f8a-4c99-a9e7-2d6f1a3c48a6", width="200"/>
+ <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-1.png", width="200"/>
+ <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-2.png", width="200"/>
+ <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-3.png", width="200"/>
+ <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-4.png", width="200"/>
 </p>
 
 
