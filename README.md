@@ -35,12 +35,6 @@ Flash Chat is an internet based messaging app similar to WhatsApp, Viber and etc
 Check it out below!
 
 
-<p align="center">
- <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-1.png", width="200"/>
- <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-2.png", width="200"/>
- <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-3.png", width="200"/>
- <img src="https://github.com/niyazovdaulet/BMI-Calculator/blob/main/bmi-calculator-4.png", width="200"/>
-</p>
 
 
 
