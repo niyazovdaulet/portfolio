@@ -27,6 +27,28 @@ A beautiful weather app which allows to get the live weather data for the curren
 - 🔲 JSONDecoder
 - ❇️  CoreLocation
 
+## RecipeBook App
+RecipeBookApp is an iOS application designed to help users discover and manage recipes. The app provides a user-friendly interface to browse different categories of dishes, view popular and special recipes, and save favorite dishes for quick access.
+
+
+<p align="center">
+ <img width="200" height="450" alt="1" src="https://github.com/user-attachments/assets/808bb892-d987-481d-9040-b123e138880f" />
+<img width="200" height="450" alt="2" src="https://github.com/user-attachments/assets/4df12e9f-a433-41cb-b969-d3961c9feae3" />
+<img width="200" height="450" alt="3" src="https://github.com/user-attachments/assets/b03569e1-d7fe-4006-8ffc-49a141ac3c89" />
+<img width="200" height="450" alt="4" src="https://github.com/user-attachments/assets/be5c8c91-0163-4741-8569-8eeb489d7c59" />
+<img width="200" height="450" alt="6" src="https://github.com/user-attachments/assets/e4cab376-7e95-4ed6-bfa8-8d219b123df8" />
+<img width="200" height="450" alt="7" src="https://github.com/user-attachments/assets/bfdc8cf1-4bf1-415f-8555-a735ac2f49fe" />
+<img width="200" height="450" alt="8" src="https://github.com/user-attachments/assets/a35754d5-1e52-4677-b583-bae7ca146fd0" />
+</p>
+
+
+
+**Tech Used**
+- 🎨 Swift
+- 🏦 UiKit
+- 🚘 Swift Protocols and Delegate Design Pattern
+- 📇 URLSession
+- 🔲 JSONDecoder
 
 
 ## FlashChat App
