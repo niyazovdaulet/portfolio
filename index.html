@@ -7,7 +7,7 @@
 
 <style>
 :root {
-  --bg: #000;
+  --bg: #000000;
   --card: #0e0e11;
   --text: #f5f5f7;
   --muted: #a1a1a6;
@@ -29,42 +29,53 @@ body {
 /* ---------- HERO ---------- */
 .hero {
   text-align: center;
-  padding: 120px 20px 80px;
+  padding: 120px 20px 90px;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 700;
 }
 
 .hero p {
-  margin-top: 16px;
+  margin-top: 18px;
   font-size: 1.2rem;
   color: var(--muted);
-  max-width: 720px;
+  max-width: 760px;
   margin-inline: auto;
 }
 
 /* ---------- BUTTONS ---------- */
 .buttons {
-  margin-top: 30px;
+  margin-top: 34px;
   display: flex;
   justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .button {
-  padding: 12px 22px;
+  padding: 12px 24px;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   border: 1px solid #2c2c2e;
   color: var(--text);
+  transition: all .25s ease;
+}
+
+.button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .button.primary {
   background: var(--accent);
   color: #000;
   border: none;
+}
+
+.button.primary:hover {
+  opacity: .9;
 }
 
 /* ---------- SECTION ---------- */
@@ -75,7 +86,7 @@ body {
 }
 
 .section h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -83,13 +94,14 @@ body {
 .section p {
   text-align: center;
   color: var(--muted);
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
+  font-size: 1.05rem;
 }
 
-/* ---------- IPHONE MOCKUPS ---------- */
+/* ---------- MOCKUPS ---------- */
 .mockups {
-  margin-top: 60px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
@@ -100,38 +112,41 @@ body {
   width: 100%;
   max-width: 260px;
   border-radius: 28px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+  box-shadow: 0 35px 90px rgba(0,0,0,.85);
 }
 
-/* ---------- PROJECT GRID ---------- */
-.grid {
+/* ---------- PROJECT BUTTONS ---------- */
+.project-buttons {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
 }
 
-.card {
+.project-button {
   background: var(--card);
-  padding: 24px;
-  border-radius: 20px;
+  border: 1px solid #2c2c2e;
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text);
+  transition: all .25s ease;
 }
 
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: var(--muted);
-  font-size: 0.95rem;
+.project-button:hover {
+  background: #1c1c1f;
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-4px);
 }
 
 /* ---------- FOOTER ---------- */
 footer {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px 60px;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: .85rem;
 }
 </style>
 </head>
@@ -142,18 +157,26 @@ footer {
 <section class="hero">
   <h1>Built for iOS.</h1>
   <p>
-    I’m Daulet, a self-taught iOS developer crafting elegant, fast and
-    user-focused apps using Swift and SwiftUI.
+    I’m Daulet, a self-taught iOS developer focused on building elegant,
+    high-performance applications using Swift and SwiftUI.
   </p>
 
   <div class="buttons">
-    <a class="button primary" href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842" target="_blank">
+    <a class="button primary"
+       href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
+       target="_blank">
       View on App Store
     </a>
-    <a class="button" href="https://github.com/niyazovdaulet" target="_blank">
+
+    <a class="button"
+       href="https://github.com/niyazovdaulet"
+       target="_blank">
       GitHub
     </a>
-    <a class="button" href="https://www.linkedin.com/in/dauletniyazov/" target="_blank">
+
+    <a class="button"
+       href="https://linkedin.com/in/YOUR-LINKEDIN"
+       target="_blank">
       LinkedIn
     </a>
   </div>
@@ -163,40 +186,63 @@ footer {
 <section class="section">
   <h2>AnotherLife</h2>
   <p>
-    A habit tracking app designed to help people build better lives through
-    clarity, consistency and beautiful design.
+    A habit tracking app designed to help users build better lives through
+    clarity, consistency and meaningful insights.
   </p>
 
   <div class="mockups">
-    <!-- Replace with your real screenshots -->
-    <img src="images/anotherlife/screen1.png">
-    <img src="images/anotherlife/screen2.png">
-    <img src="images/anotherlife/screen3.png">
-    <img src="images/anotherlife/screen4.png">
+    <img src="AL-1.png" alt="AnotherLife screenshot 1">
+    <img src="AL-2.png" alt="AnotherLife screenshot 2">
+    <img src="AL-3.png" alt="AnotherLife screenshot 3">
+    <img src="AL-4.png" alt="AnotherLife screenshot 4">
+    <img src="AL-5.png" alt="AnotherLife screenshot 5">
+    <img src="AL-6.png" alt="AnotherLife screenshot 6">
   </div>
 </section>
 
 <!-- OTHER PROJECTS -->
 <section class="section">
   <h2>Other Projects</h2>
+  <p>Additional iOS applications available on GitHub.</p>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Filmly</h3>
-      <p>Movie discovery app built in SwiftUI.</p>
-    </div>
-    <div class="card">
-      <h3>RecipeBook</h3>
-      <p>Recipe browsing and favorites app.</p>
-    </div>
-    <div class="card">
-      <h3>FlashChat</h3>
-      <p>Real-time chat app using Firebase.</p>
-    </div>
-    <div class="card">
-      <h3>Clima</h3>
-      <p>Weather app with CoreLocation.</p>
-    </div>
+  <div class="project-buttons">
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/Filmly"
+       target="_blank">
+      Filmly
+    </a>
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/RecipeBook"
+       target="_blank">
+      RecipeBookApp
+    </a>
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/FlashChat"
+       target="_blank">
+      FlashChat
+    </a>
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/BMI-Calculator"
+       target="_blank">
+      BMI Calculator
+    </a>
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/Todoey"
+       target="_blank">
+      Todoey
+    </a>
+
+    <a class="project-button"
+       href="https://github.com/niyazovdaulet/Tipsy"
+       target="_blank">
+      Tipsy
+    </a>
+
   </div>
 </section>
 
