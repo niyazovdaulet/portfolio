@@ -468,6 +468,12 @@ body.nav-open .nav-drawer {
   margin-top: 1px;
 }
 
+/* Non-link App Store pill (e.g. “Soon” before listing is live) */
+span.btn-appstore.btn-appstore--soon {
+  cursor: default;
+  user-select: none;
+}
+
 /* —— Project cards —— */
 .cards {
   max-width: var(--max);
@@ -719,7 +725,6 @@ body.nav-open .nav-drawer {
   min-height: 0;
 }
 
-/* Keeps poster + video at phone-like size before/after play (avoids intrinsic “huge” flash) */
 .spotlight-video-crop {
   width: min(100%, 400px, calc(min(72vh, 680px) * 9 / 16));
   max-width: 100%;
@@ -756,25 +761,153 @@ body.nav-open .nav-drawer {
   margin-top: 8px;
 }
 
-.friscora-thumbs {
+/* —— Spotlight screenshot carousel —— */
+.spotlight-gallery {
   max-width: var(--max);
-  margin: 0 auto;
+  margin: 8px auto 0;
+  padding: 0 4px;
+}
+
+.spotlight-gallery-chrome {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0;
+  border-radius: 28px;
+  padding: 8px;
+  background: linear-gradient(145deg, #25252d 0%, #12121a 48%, #0e0e14 100%);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.friscora-thumbs img {
-  border-radius: 16px;
-  box-shadow: var(--shadow-soft);
-  width: 100%;
-  aspect-ratio: 9 / 19.5;
-  object-fit: cover;
+.spotlight-gallery-chrome--violet {
+  background: linear-gradient(145deg, #2a2240 0%, #1a1428 45%, #120f1c 100%);
 }
 
-@media (max-width: 700px) {
-  .friscora-thumbs {
-    grid-template-columns: 1fr;
-    max-width: 280px;
+.spotlight-gallery-viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 22px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.spotlight-gallery-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-gallery-viewport {
+    scroll-behavior: auto;
   }
+}
+
+.spotlight-gallery-track {
+  display: flex;
+  margin: 0;
+  padding: 28px 12px 32px;
+  list-style: none;
+  gap: 0;
+}
+
+.spotlight-gallery-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min(58vh, 520px);
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.spotlight-gallery-slide img {
+  max-height: min(54vh, 500px);
+  width: auto;
+  max-width: 100%;
+  border-radius: 32px;
+  object-fit: contain;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.spotlight-gallery-arrow {
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.spotlight-gallery-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.spotlight-gallery-arrow:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.spotlight-gallery-arrow span {
+  margin-top: -2px;
+}
+
+@media (max-width: 640px) {
+  .spotlight-gallery-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .spotlight-gallery-slide {
+    min-height: min(50vh, 440px);
+  }
+  .spotlight-gallery-slide img {
+    max-height: min(46vh, 420px);
+    border-radius: 26px;
+  }
+}
+
+.spotlight-gallery-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-bottom: 4px;
+}
+
+.spotlight-gallery-dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #c4c4c8;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.spotlight-gallery-dots button[aria-current="true"] {
+  opacity: 1;
+  background: var(--text);
+  transform: scale(1.2);
+}
+
+.spotlight-gallery-dots button:hover {
+  opacity: 0.85;
 }
