@@ -1,0 +1,41 @@
+# Portfolio (GitHub Pages)
+
+Static portfolio for **Daulet Niyazov** — iOS apps, case studies, and links. Live site:
+
+**https://niyazovdaulet.github.io/portfolio/**
+
+## Run locally
+
+Open `index.html` in a browser, or from this directory:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then visit `http://localhost:8080`.
+
+## Deploy (overwrite existing Pages site)
+
+1. Ensure this repository is named **`portfolio`** under the **`niyazovdaulet`** GitHub account (URL must match `https://niyazovdaulet.github.io/portfolio/`).
+2. Commit and push `main` (or your default branch):
+
+   ```bash
+   git add -A && git commit -m "Rebuild portfolio site" && git push
+   ```
+
+3. In GitHub: **Settings → Pages → Build and deployment → Source**: **Deploy from a branch**, branch **`main`**, folder **`/` (root)**.
+4. Wait for the Pages build to finish; hard-refresh the site if you still see the old version.
+
+## Update Friscora App Store link
+
+When the App Store URL is available, add a dedicated **App Store** button on the Friscora featured slide (and optionally on [Friscora-Landing](https://niyazovdaulet.github.io/Friscora-Landing/)) next to the existing GitHub and landing links.
+
+## Assets
+
+- Project screenshots live under `assets/images/projects/`.
+- CV is served as `assets/cv.pdf` (replace this file when your résumé changes).
+- To add **WeatherApp Clone** screenshots, drop PNGs into `assets/images/projects/weather/` and replace the placeholder block in `index.html` with an image grid like the other cards.
+
+## License
+
+Site content © Daulet Niyazov. Project screenshots are from your own apps.

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daulet Niyazov — iOS Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of native iOS apps by Daulet Niyazov — Swift, SwiftUI, UIKit, and shipped products on the App Store."
+    />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta property="og:title" content="Daulet Niyazov — iOS Developer" />
+    <meta
+      property="og:description"
+      content="Swift & SwiftUI iOS apps — finance, habits, discovery, and more."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="inner">
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="navDrawer"
+          aria-label="Open menu"
+        >
+          <span class="bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav class="nav-drawer" id="navDrawer" aria-label="Site">
+      <p class="drawer-title">Menu</p>
+      <div class="drawer-nav">
+        <a href="#home" data-close-nav>Home</a>
+        <a href="#featured" data-close-nav>Featured</a>
+        <a href="#work" data-close-nav>Projects</a>
+        <a href="#about" data-close-nav>About / Contact</a>
+        <a href="#privacy" data-close-nav>Privacy</a>
+      </div>
+      <div class="drawer-section">
+        <p class="drawer-title">Links</p>
+        <div class="drawer-nav">
+          <a
+            href="https://github.com/niyazovdaulet"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/dauletniyazov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:17niyazov@gmail.com">Email</a>
+          <a href="assets/cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="hero-mark" aria-hidden="true">DN</div>
+          <h1>Daulet Niyazov</h1>
+          <p class="role">iOS Developer</p>
+          <p class="lede">
+            I build native iOS apps with Swift and SwiftUI—clear interfaces,
+            solid architecture, and privacy-conscious design.
+          </p>
+          <p class="lede">
+            From finance and habits to discovery tools, I ship products end to
+            end and maintain the details that make them feel polished.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn-outline"
+              href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
+              target="_blank"
+              rel="noopener noreferrer"
+              >App Store</a
+            >
+            <a
+              class="btn-outline"
+              href="https://github.com/niyazovdaulet"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="btn-outline"
+              href="https://www.linkedin.com/in/dauletniyazov/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="wave-wrap" aria-hidden="true">
+        <svg viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#f5f5f7"
+            d="M0,32 C240,8 480,56 720,28 C960,0 1200,40 1440,24 L1440,48 L0,48 Z"
+          />
+        </svg>
+      </div>
+
+      <p class="scroll-hint">
+        <a href="#featured">
+          portfolio
+          <span class="chev" aria-hidden="true"></span>
+        </a>
+      </p>
+
+      <section class="section featured" id="featured" aria-labelledby="featured-heading">
+        <div class="section-head">
+          <h2 id="featured-heading">Featured</h2>
+          <p>Recent shipped work and flagship apps.</p>
+        </div>
+
+        <div class="carousel-shell">
+          <div class="carousel">
+            <button type="button" class="carousel-nav" id="carouselPrev" aria-label="Previous slide">
+              ‹
+            </button>
+            <div class="carousel-viewport">
+              <div class="carousel-track" id="carouselTrack">
+                <!-- Slide 1: Friscora -->
+                <article class="carousel-slide" style="--slide-bg: url(assets/images/projects/friscora/1.png)">
+                  <div class="slide-visual">
+                    <div class="slide-visual-inner">
+                      <img src="assets/images/projects/friscora/1.png" alt="Friscora dashboard screenshot" width="400" height="867" />
+                      <img src="assets/images/projects/friscora/2.png" alt="Friscora screen" width="400" height="867" />
+                      <img src="assets/images/projects/friscora/3.png" alt="Friscora screen" width="400" height="867" />
+                    </div>
+                  </div>
+                  <div class="slide-body">
+                    <h3>Friscora</h3>
+                    <p>
+                      Native SwiftUI finance app: income, expenses, goals, analytics, work schedule,
+                      optional statement import with on-device rule-based categorization—no in-app AI
+                      assistant.
+                    </p>
+                    <p>
+                      Optional Firebase Auth and Firestore power schedule sharing; most data stays
+                      local with App Store–aligned privacy practices.
+                    </p>
+                    <div class="slide-actions">
+                      <a
+                        class="btn-github"
+                        href="https://github.com/niyazovdaulet/Friscora---Financial-Budget-App"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        GitHub</a
+                      >
+                      <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Landing/" target="_blank" rel="noopener noreferrer">App Store &amp; info</a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Slide 2: AnotherLife -->
+                <article class="carousel-slide" style="--slide-bg: url(assets/images/projects/anotherlife/1.webp)">
+                  <div class="slide-visual">
+                    <div class="slide-visual-inner">
+                      <img src="assets/images/projects/anotherlife/1.webp" alt="AnotherLife habit tracking" width="400" height="867" />
+                      <img src="assets/images/projects/anotherlife/2.webp" alt="AnotherLife screen" width="400" height="867" />
+                      <img src="assets/images/projects/anotherlife/5.webp" alt="AnotherLife screen" width="400" height="867" />
+                    </div>
+                  </div>
+                  <div class="slide-body">
+                    <h3>AnotherLife</h3>
+                    <p>
+                      Habit tracking on iPhone: clarity, streaks, stats, challenges, and leaderboards.
+                      Shipped on the App Store with Firebase-backed sync; open-source README describes
+                      core MVVM and local persistence patterns.
+                    </p>
+                    <p>
+                      Built with SwiftUI; emphasizes a modern UI, insights, and long-term engagement.
+                    </p>
+                    <div class="slide-actions">
+                      <a
+                        class="btn-github"
+                        href="https://github.com/niyazovdaulet/AnotherLife"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        GitHub</a
+                      >
+                      <a
+                        class="btn-muted"
+                        href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >App Store</a
+                      >
+                      <a class="btn-muted" href="https://niyazovdaulet.github.io/anotherlife-landing/" target="_blank" rel="noopener noreferrer">Landing</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button type="button" class="carousel-nav" id="carouselNext" aria-label="Next slide">
+              ›
+            </button>
+          </div>
+          <div class="carousel-dots" role="tablist" aria-label="Choose slide">
+            <button type="button" aria-label="Friscora" aria-current="true"></button>
+            <button type="button" aria-label="AnotherLife" aria-current="false"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-heading">
+        <div class="section-head">
+          <h2 id="work-heading">More apps &amp; projects</h2>
+          <p>Additional iOS work—newest first. Each card links to the GitHub repository.</p>
+        </div>
+
+        <div class="cards">
+          <!-- Filmly -->
+          <article class="project-card" id="filmly" style="--card-bg: url(assets/images/projects/filmly/home.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/filmly/home.png" alt="Filmly home" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/filmly/filters.png" alt="Filmly filters" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/filmly/detail.png" alt="Filmly movie detail" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>Filmly</h3>
+              <p>
+                SwiftUI movie discovery with TMDB: trending browse, live search, powerful filters,
+                detail with cast and trailers, favorites in UserDefaults, and resilient networking with
+                Combine.
+              </p>
+              <div class="badge-row">
+                <span class="badge">SwiftUI</span>
+                <span class="badge">MVVM</span>
+                <span class="badge">Combine</span>
+                <span class="badge">TMDB</span>
+                <span class="badge">iOS 18+</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/Filmly" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- RecipeBook -->
+          <article class="project-card" id="recipebook" style="--card-bg: url(assets/images/projects/recipebook/1.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/recipebook/1.png" alt="RecipeBook onboarding or home" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/recipebook/2.png" alt="RecipeBook browse" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/recipebook/4.png" alt="RecipeBook detail" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>RecipeBookApp</h3>
+              <p>
+                UIKit recipe browser with storyboards and XIBs, MVC, TheMealDB integration, onboarding,
+                favorites with UserDefaults, Kingfisher for images, and ProgressHUD for feedback.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">MVC</span>
+                <span class="badge">REST</span>
+                <span class="badge">CocoaPods</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/RecipeBook" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- FlashChat -->
+          <article class="project-card" id="flashchat">
+            <div class="media">
+              <div class="media-grid" style="max-width: 100%; grid-template-columns: 1fr">
+                <div class="media-placeholder">
+                  Screenshots not published for this course-based project.<br />
+                  <small>UIKit · Firebase · CocoaPods</small>
+                </div>
+              </div>
+            </div>
+            <div class="copy">
+              <h3>FlashChat</h3>
+              <p>
+                Real-time style chat UI built with UIKit and CocoaPods, integrating Firebase patterns
+                for messaging. Not distributed on the App Store; no public fork is linked here yet.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">Firebase</span>
+                <span class="badge">CocoaPods</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-muted" href="mailto:17niyazov@gmail.com?subject=FlashChat%20sample">Request details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Weather clone -->
+          <article class="project-card" id="weather-clone">
+            <div class="media">
+              <div class="media-grid" style="max-width: 100%; grid-template-columns: 1fr">
+                <div class="media-placeholder">
+                  Add simulator screenshots to <code>assets/images/projects/weather/</code> when ready.<br />
+                  <small>UIKit · OpenWeather · Location</small>
+                </div>
+              </div>
+            </div>
+            <div class="copy">
+              <h3>WeatherApp Clone</h3>
+              <p>
+                UIKit and Storyboard clone of the native Weather experience: OpenWeather data, hourly and
+                7-day forecasts, location services, animated weather scenes, and dynamic backgrounds for
+                light and dark mode.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">Storyboard</span>
+                <span class="badge">OpenWeather</span>
+                <span class="badge">MVC</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/WeatherApp-Clone" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Clima -->
+          <article class="project-card" id="clima" style="--card-bg: url(assets/images/projects/clima/1.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/clima/1.png" alt="Clima weather" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/clima/2.png" alt="Clima screen" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/clima/3.png" alt="Clima screen" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>ClimaApp</h3>
+              <p>
+                Compact UIKit weather client: GPS for current location or typed city search, URLSession
+                and Codable for API data, delegates, and dark mode friendly layout.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">Core Location</span>
+                <span class="badge">URLSession</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/ClimaApp" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Tipsy -->
+          <article class="project-card" id="tipsy" style="--card-bg: url(assets/images/projects/tipsy/1.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/tipsy/1.png" alt="Tipsy" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/tipsy/2.png" alt="Tipsy" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/tipsy/3.png" alt="Tipsy" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>Tipsy</h3>
+              <p>
+                Small UIKit utility to split a bill between multiple people with a tip percentage—clear
+                flow using segues and straightforward OOP structure.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">Segues</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/Tipsy" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- BMI -->
+          <article class="project-card" id="bmi" style="--card-bg: url(assets/images/projects/bmi/1.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/bmi/1.png" alt="BMI Calculator" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/bmi/2.png" alt="BMI Calculator" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/bmi/3.png" alt="BMI Calculator" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>BMI Calculator</h3>
+              <p>
+                Early UIKit project for optionals, MVC, and classes: sliders for input, calculate, and a
+                modal result screen with recalculate flow.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">MVC</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/BMI-Calculator" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Todoey -->
+          <article class="project-card" id="todoey" style="--card-bg: url(assets/images/projects/todoey/1.png)">
+            <div class="media">
+              <div class="media-grid">
+                <img src="assets/images/projects/todoey/1.png" alt="Todoey" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/todoey/2.png" alt="Todoey" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/todoey/4.png" alt="Todoey" loading="lazy" width="400" height="867" />
+              </div>
+            </div>
+            <div class="copy">
+              <h3>Todoey</h3>
+              <p>
+                Personal to-do list with UIKit, segues, and CocoaPods—persistent categories and items for
+                everyday productivity practice.
+              </p>
+              <div class="badge-row">
+                <span class="badge">UIKit</span>
+                <span class="badge">CocoaPods</span>
+                <span class="badge">Persistence</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn-github" href="https://github.com/niyazovdaulet/Todoey" target="_blank" rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-head">
+          <h2 id="about-heading">About / Contact</h2>
+        </div>
+        <div class="panel">
+          <p>
+            I’m <strong>Daulet Niyazov</strong>, an iOS developer focused on native Swift and SwiftUI
+            products. For collaboration, interviews, or app support, reach out by email or LinkedIn.
+          </p>
+          <ul class="link-list">
+            <li><a href="mailto:17niyazov@gmail.com">17niyazov@gmail.com</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/dauletniyazov/" target="_blank" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/niyazovdaulet" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li><a href="assets/cv.pdf" download>Download CV (PDF)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="privacy" aria-labelledby="privacy-heading">
+        <div class="section-head">
+          <h2 id="privacy-heading">Privacy</h2>
+        </div>
+        <div class="panel">
+          <p>Policies and support pages for shipped apps:</p>
+          <ul>
+            <li>
+              <strong>AnotherLife</strong> —
+              <a href="https://niyazovdaulet.github.io/anotherlife-privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>,
+              <a href="https://niyazovdaulet.github.io/anotherlife-support/" target="_blank" rel="noopener noreferrer">Support</a>,
+              <a href="https://niyazovdaulet.github.io/anotherlife-landing/" target="_blank" rel="noopener noreferrer">Landing</a>
+            </li>
+            <li>
+              <strong>Friscora</strong> —
+              <a href="https://niyazovdaulet.github.io/Friscora-Privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>,
+              <a href="https://niyazovdaulet.github.io/Friscora-Support/" target="_blank" rel="noopener noreferrer">Support</a>,
+              <a href="https://niyazovdaulet.github.io/Friscora-Landing/" target="_blank" rel="noopener noreferrer">Landing</a>
+            </li>
+          </ul>
+          <p>
+            Other repositories may include privacy notes in their README (for example RecipeBookApp). This
+            portfolio site is static HTML on GitHub Pages and does not collect analytics by default.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="row">
+        <a href="#about">About / Contact</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+      <p class="footer-copy">© 2026 Daulet Niyazov · iOS Developer</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
