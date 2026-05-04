@@ -34,7 +34,7 @@ When the App Store URL is available, add a dedicated **App Store** button in the
 
 - Project screenshots live under `assets/images/projects/`.
 - **Friscora demo video:** `assets/media/friscora-demo.m4v` — see `assets/media/README.md` for transcoding and file-size notes (original `app-clip.mov` is too large for GitHub).
-- **AnotherLife demo:** add `assets/media/anotherlife-demo.m4v` and swap the placeholder in `index.html` (comment in markup explains how).
+- **AnotherLife demo:** `assets/media/anotherlife-demo.m4v` (replace the file to refresh the recording).
 - CV is served as `assets/cv.pdf` (replace this file when your résumé changes).
 - **WeatherApp Clone** screenshots live in `assets/images/projects/weather/` (replace the PNGs there if you refresh captures).
 
