@@ -155,8 +155,8 @@
                 controls
                 playsinline
                 preload="metadata"
-                width="720"
-                height="1280"
+                width="1280"
+                height="720"
                 poster="assets/images/projects/friscora/1.png"
                 aria-label="Screen recording of the Friscora app"
               >
@@ -193,9 +193,15 @@
                 ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub</a
               >
-              <span class="btn-appstore btn-appstore--soon" aria-label="App Store listing coming soon">
-                <svg class="btn-appstore-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                Soon
+              <span class="btn-appstore-badge btn-appstore-badge--soon" aria-label="Coming soon on the App Store">
+                <svg class="btn-appstore-badge__apple" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                  <path d="M18.546,12.763c0.024-1.87,1.004-3.597,2.597-4.576c-1.009-1.442-2.64-2.323-4.399-2.378c-1.851-0.194-3.645,1.107-4.588,1.107c-0.961,0-2.413-1.088-3.977-1.056C6.122,5.927,4.25,7.068,3.249,8.867c-2.131,3.69-0.542,9.114,1.5,12.097c1.022,1.461,2.215,3.092,3.778,3.035c1.529-0.063,2.1-0.975,3.945-0.975c1.828,0,2.364,0.975,3.958,0.938c1.64-0.027,2.674-1.467,3.66-2.942c0.734-1.041,1.299-2.191,1.673-3.408C19.815,16.788,18.548,14.879,18.546,12.763z"/>
+                  <path d="M15.535,3.847C16.429,2.773,16.87,1.393,16.763,0c-1.366,0.144-2.629,0.797-3.535,1.829c-0.895,1.019-1.349,2.351-1.261,3.705C13.352,5.548,14.667,4.926,15.535,3.847z"/>
+                </svg>
+                <span class="btn-appstore-badge__text">
+                  <span class="btn-appstore-badge__kicker">Coming soon on</span>
+                  <span class="btn-appstore-badge__title">App Store</span>
+                </span>
               </span>
               <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Landing/" target="_blank" rel="noopener noreferrer">Landing</a>
               <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Support/" target="_blank" rel="noopener noreferrer">Support</a>
@@ -203,29 +209,136 @@
           </aside>
         </div>
 
-        <div class="spotlight-gallery" data-spotlight-gallery aria-label="Friscora screenshots">
-          <div class="spotlight-gallery-chrome">
-            <button type="button" class="spotlight-gallery-arrow spotlight-gallery-prev" aria-label="Previous screenshot">
-              <span aria-hidden="true">‹</span>
-            </button>
-            <div class="spotlight-gallery-viewport">
-              <ul class="spotlight-gallery-track">
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/friscora/1.png" alt="Friscora dashboard" width="400" height="867" />
-                </li>
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/friscora/2.png" alt="Friscora analytics" loading="lazy" width="400" height="867" />
-                </li>
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/friscora/3.png" alt="Friscora add flow" loading="lazy" width="400" height="867" />
-                </li>
-              </ul>
+        <div
+          class="spotlight-gallery"
+          data-spotlight-gallery
+          data-spotlight-autoplay-ms="8500"
+          aria-label="Friscora screenshots"
+        >
+          <div class="spotlight-showcase spotlight-showcase--friscora">
+            <div class="spotlight-showcase__ambient" aria-hidden="true"></div>
+            <div class="spotlight-showcase__shell">
+              <button type="button" class="spotlight-showcase__fab spotlight-showcase__fab--prev" aria-label="Previous screenshot">
+                <span aria-hidden="true"></span>
+              </button>
+              <div class="spotlight-showcase__stage-wrap">
+                <div class="spotlight-showcase__stage">
+                  <ul class="spotlight-showcase__track" role="list">
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#6b4cff"
+                      data-glow-b="#12081f"
+                      data-kicker="Your money, at a glance"
+                      data-title="Know where every penny goes."
+                      data-desc="Balance, spending, and insights in one calm dashboard."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: Friscora dashboard">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/friscora/1.png"
+                              alt="Friscora dashboard with balance and categories"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              fetchpriority="high"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#4a6cf7"
+                      data-glow-b="#05070a"
+                      data-kicker="Log in seconds"
+                      data-title="Add any transaction fast."
+                      data-desc="Expense, income, or goals—captured with a focused flow."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: Friscora add transaction">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/friscora/2.png"
+                              alt="Friscora add transaction screen"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#c42a3a"
+                      data-glow-b="#1a0508"
+                      data-kicker="Understand your spending"
+                      data-title="Spending made visual."
+                      data-desc="Charts and category totals that stay easy to read at a glance."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: Friscora analytics">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/friscora/3.png"
+                              alt="Friscora analytics with spending by category"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#2ee6a6"
+                      data-glow-b="#042018"
+                      data-kicker="Never miss a payment"
+                      data-title="Plan ahead, stress less."
+                      data-desc="Recurring transactions on a calendar built around your rhythm."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: Friscora schedule">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/friscora/4.png"
+                              alt="Friscora schedule calendar"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="spotlight-showcase__fab spotlight-showcase__fab--next" aria-label="Next screenshot">
+                <span aria-hidden="true"></span>
+              </button>
             </div>
-            <button type="button" class="spotlight-gallery-arrow spotlight-gallery-next" aria-label="Next screenshot">
-              <span aria-hidden="true">›</span>
-            </button>
+            <div class="spotlight-showcase__caption" aria-live="polite">
+              <p class="spotlight-showcase__kicker"></p>
+              <h3 class="spotlight-showcase__title"></h3>
+              <p class="spotlight-showcase__desc"></p>
+            </div>
+            <div class="spotlight-showcase__chrome-foot">
+              <div class="spotlight-showcase__progress" aria-hidden="true">
+                <div class="spotlight-showcase__progress-fill"></div>
+              </div>
+              <div class="spotlight-showcase__ticks" role="tablist" aria-label="Choose screenshot"></div>
+            </div>
           </div>
-          <div class="spotlight-gallery-dots" role="tablist" aria-label="Choose screenshot"></div>
         </div>
       </section>
 
@@ -246,8 +359,8 @@
                 controls
                 playsinline
                 preload="metadata"
-                width="720"
-                height="1280"
+                width="1280"
+                height="720"
                 poster="assets/images/projects/anotherlife/1.webp"
                 aria-label="Screen recording of the AnotherLife app"
               >
@@ -284,12 +397,18 @@
                 GitHub</a
               >
               <a
-                class="btn-appstore"
+                class="btn-appstore-badge"
                 href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><svg class="btn-appstore-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                App Store</a
+                ><svg class="btn-appstore-badge__apple" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                  <path d="M18.546,12.763c0.024-1.87,1.004-3.597,2.597-4.576c-1.009-1.442-2.64-2.323-4.399-2.378c-1.851-0.194-3.645,1.107-4.588,1.107c-0.961,0-2.413-1.088-3.977-1.056C6.122,5.927,4.25,7.068,3.249,8.867c-2.131,3.69-0.542,9.114,1.5,12.097c1.022,1.461,2.215,3.092,3.778,3.035c1.529-0.063,2.1-0.975,3.945-0.975c1.828,0,2.364,0.975,3.958,0.938c1.64-0.027,2.674-1.467,3.66-2.942c0.734-1.041,1.299-2.191,1.673-3.408C19.815,16.788,18.548,14.879,18.546,12.763z"/>
+                  <path d="M15.535,3.847C16.429,2.773,16.87,1.393,16.763,0c-1.366,0.144-2.629,0.797-3.535,1.829c-0.895,1.019-1.349,2.351-1.261,3.705C13.352,5.548,14.667,4.926,15.535,3.847z"/>
+                </svg>
+                <span class="btn-appstore-badge__text">
+                  <span class="btn-appstore-badge__kicker">Download on the</span>
+                  <span class="btn-appstore-badge__title">App Store</span>
+                </span></a
               >
               <a class="btn-muted" href="https://niyazovdaulet.github.io/anotherlife-landing/" target="_blank" rel="noopener noreferrer">Landing</a>
               <a class="btn-muted" href="https://niyazovdaulet.github.io/anotherlife-support/" target="_blank" rel="noopener noreferrer">Support</a>
@@ -297,29 +416,184 @@
           </aside>
         </div>
 
-        <div class="spotlight-gallery" data-spotlight-gallery aria-label="AnotherLife screenshots">
-          <div class="spotlight-gallery-chrome spotlight-gallery-chrome--violet">
-            <button type="button" class="spotlight-gallery-arrow spotlight-gallery-prev" aria-label="Previous screenshot">
-              <span aria-hidden="true">‹</span>
-            </button>
-            <div class="spotlight-gallery-viewport">
-              <ul class="spotlight-gallery-track">
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/anotherlife/1.webp" alt="AnotherLife habits" width="400" height="867" />
-                </li>
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/anotherlife/2.webp" alt="AnotherLife screen" loading="lazy" width="400" height="867" />
-                </li>
-                <li class="spotlight-gallery-slide">
-                  <img src="assets/images/projects/anotherlife/5.webp" alt="AnotherLife insights" loading="lazy" width="400" height="867" />
-                </li>
-              </ul>
+        <div
+          class="spotlight-gallery"
+          data-spotlight-gallery
+          data-spotlight-autoplay-ms="8500"
+          aria-label="AnotherLife screenshots"
+        >
+          <div class="spotlight-showcase spotlight-showcase--anotherlife">
+            <div class="spotlight-showcase__ambient" aria-hidden="true"></div>
+            <div class="spotlight-showcase__shell">
+              <button type="button" class="spotlight-showcase__fab spotlight-showcase__fab--prev" aria-label="Previous screenshot">
+                <span aria-hidden="true"></span>
+              </button>
+              <div class="spotlight-showcase__stage-wrap">
+                <div class="spotlight-showcase__stage">
+                  <ul class="spotlight-showcase__track" role="list">
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#6366f1"
+                      data-glow-b="#0f0f12"
+                      data-kicker="Habits that matter"
+                      data-title="Track habits that matter."
+                      data-desc="Progress, streaks, and daily completion without the noise."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife habits">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/1.png"
+                              alt="AnotherLife habit list with streaks"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              fetchpriority="high"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#3b82f6"
+                      data-glow-b="#0a0f18"
+                      data-kicker="Week in review"
+                      data-title="Understand your week."
+                      data-desc="Habits, consistency, and momentum in a single weekly report."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife weekly report">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/2.png"
+                              alt="AnotherLife weekly report"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#10b981"
+                      data-glow-b="#0c1210"
+                      data-kicker="Stay accountable"
+                      data-title="Structured challenges."
+                      data-desc="Commit to challenges, earn points, and keep streaks honest."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife challenge">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/3.png"
+                              alt="AnotherLife daily coding challenge"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#f59e0b"
+                      data-glow-b="#12100a"
+                      data-kicker="Reflect with purpose"
+                      data-title="Notes beside every habit."
+                      data-desc="Capture how you felt so growth stays human, not just numeric."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife notes">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/4.png"
+                              alt="AnotherLife notes grouped by habit"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#a855f7"
+                      data-glow-b="#0f0818"
+                      data-kicker="Level up"
+                      data-title="Discipline, gamified gently."
+                      data-desc="XP, levels, and challenges that reward showing up—without gimmicks."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife profile">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/5.png"
+                              alt="AnotherLife profile and active challenges"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      class="spotlight-showcase__slide"
+                      data-glow-a="#fb7185"
+                      data-glow-b="#140810"
+                      data-kicker="Celebrate wins"
+                      data-title="Consistency that feels earned."
+                      data-desc="Completion moments that reinforce momentum—then you get back to work."
+                    >
+                      <button type="button" class="spotlight-showcase__device" aria-label="Open fullscreen: AnotherLife celebration">
+                        <span class="spotlight-showcase__bezel" aria-hidden="true">
+                          <span class="spotlight-showcase__island"></span>
+                          <span class="spotlight-showcase__screen">
+                            <img
+                              src="assets/images/projects/anotherlife/6.png"
+                              alt="AnotherLife habit completion celebration"
+                              width="400"
+                              height="867"
+                              decoding="async"
+                              loading="lazy"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="spotlight-showcase__fab spotlight-showcase__fab--next" aria-label="Next screenshot">
+                <span aria-hidden="true"></span>
+              </button>
             </div>
-            <button type="button" class="spotlight-gallery-arrow spotlight-gallery-next" aria-label="Next screenshot">
-              <span aria-hidden="true">›</span>
-            </button>
+            <div class="spotlight-showcase__caption" aria-live="polite">
+              <p class="spotlight-showcase__kicker"></p>
+              <h3 class="spotlight-showcase__title"></h3>
+              <p class="spotlight-showcase__desc"></p>
+            </div>
+            <div class="spotlight-showcase__chrome-foot">
+              <div class="spotlight-showcase__progress" aria-hidden="true">
+                <div class="spotlight-showcase__progress-fill"></div>
+              </div>
+              <div class="spotlight-showcase__ticks" role="tablist" aria-label="Choose screenshot"></div>
+            </div>
           </div>
-          <div class="spotlight-gallery-dots" role="tablist" aria-label="Choose screenshot"></div>
         </div>
       </section>
 
@@ -590,6 +864,14 @@
         </div>
       </section>
     </main>
+
+    <dialog class="spotlight-lightbox" data-spotlight-lightbox aria-label="Screenshot fullscreen">
+      <div class="spotlight-lightbox__backdrop" data-spotlight-lightbox-close tabindex="-1"></div>
+      <div class="spotlight-lightbox__panel" role="document">
+        <button type="button" class="spotlight-lightbox__close" data-spotlight-lightbox-close aria-label="Close">×</button>
+        <img class="spotlight-lightbox__img" alt="" width="400" height="867" decoding="async" />
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="row">
