@@ -713,12 +713,27 @@ body.nav-open .nav-drawer {
   overflow: hidden;
   box-shadow: var(--shadow);
   background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
 }
 
-.friscora-video video {
+/* Keeps poster + video at phone-like size before/after play (avoids intrinsic “huge” flash) */
+.spotlight-video-crop {
+  width: min(100%, 400px, calc(min(72vh, 680px) * 9 / 16));
+  max-width: 100%;
+  max-height: min(72vh, 680px);
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  background: #000;
+}
+
+.spotlight-video-crop video {
   display: block;
   width: 100%;
-  max-height: min(78vh, 820px);
+  height: 100%;
+  object-fit: contain;
   background: #000;
 }
 
