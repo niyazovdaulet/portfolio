@@ -15,6 +15,10 @@
       content="Swift & SwiftUI iOS apps — finance, habits, discovery, and more."
     />
     <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://niyazovdaulet.github.io/portfolio/assets/images/hero.png"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -71,7 +75,15 @@
     <main id="main">
       <section class="hero" id="home">
         <div class="hero-content">
-          <div class="hero-mark" aria-hidden="true">DN</div>
+          <div class="hero-photo">
+            <img
+              src="assets/images/hero.png"
+              alt="Daulet Niyazov"
+              width="320"
+              height="320"
+              fetchpriority="high"
+            />
+          </div>
           <h1>Daulet Niyazov</h1>
           <p class="role">iOS Developer</p>
           <p class="lede">
@@ -293,13 +305,12 @@
           </article>
 
           <!-- Weather clone -->
-          <article class="project-card" id="weather-clone">
+          <article class="project-card" id="weather-clone" style="--card-bg: url(assets/images/projects/weather/1.png)">
             <div class="media">
-              <div class="media-grid" style="max-width: 100%; grid-template-columns: 1fr">
-                <div class="media-placeholder">
-                  Add simulator screenshots to <code>assets/images/projects/weather/</code> when ready.<br />
-                  <small>UIKit · OpenWeather · Location</small>
-                </div>
+              <div class="media-grid">
+                <img src="assets/images/projects/weather/1.png" alt="Weather app clone main screen" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/weather/2.png" alt="Weather app hourly forecast" loading="lazy" width="400" height="867" />
+                <img src="assets/images/projects/weather/3.png" alt="Weather app daily forecast" loading="lazy" width="400" height="867" />
               </div>
             </div>
             <div class="copy">

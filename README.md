@@ -34,7 +34,7 @@ When the App Store URL is available, add a dedicated **App Store** button on the
 
 - Project screenshots live under `assets/images/projects/`.
 - CV is served as `assets/cv.pdf` (replace this file when your résumé changes).
-- To add **WeatherApp Clone** screenshots, drop PNGs into `assets/images/projects/weather/` and replace the placeholder block in `index.html` with an image grid like the other cards.
+- **WeatherApp Clone** screenshots live in `assets/images/projects/weather/` (replace the PNGs there if you refresh captures).
 
 ## License
 

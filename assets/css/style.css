@@ -255,17 +255,22 @@ body.nav-open .nav-drawer {
   max-width: 560px;
 }
 
-.hero-mark {
-  width: 72px;
-  height: 72px;
+.hero-photo {
+  width: clamp(132px, 32vw, 168px);
+  height: clamp(132px, 32vw, 168px);
   margin: 0 auto 28px;
   border-radius: 50%;
-  border: 2px solid var(--text);
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 1.35rem;
-  letter-spacing: -0.02em;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  border: 3px solid #fff;
+  outline: 1px solid var(--line);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .hero h1 {
