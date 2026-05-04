@@ -46,6 +46,7 @@
       <p class="drawer-title">Menu</p>
       <div class="drawer-nav">
         <a href="#home" data-close-nav>Home</a>
+        <a href="#friscora" data-close-nav>Friscora</a>
         <a href="#featured" data-close-nav>Featured</a>
         <a href="#work" data-close-nav>Projects</a>
         <a href="#about" data-close-nav>About / Contact</a>
@@ -130,109 +131,141 @@
       </div>
 
       <p class="scroll-hint">
-        <a href="#featured">
+        <a href="#friscora">
           portfolio
           <span class="chev" aria-hidden="true"></span>
         </a>
       </p>
 
+      <section class="section friscora-spotlight" id="friscora" aria-labelledby="friscora-heading">
+        <div class="section-head section-head--wide">
+          <p class="eyebrow">Flagship</p>
+          <h2 id="friscora-heading">Friscora</h2>
+          <p class="section-lead">
+            Personal finance and work schedule for iPhone—income, expenses, goals, analytics, optional
+            bank statement import with on-device rule-based categorization, and optional schedule sharing
+            backed by Firebase.
+          </p>
+        </div>
+
+        <div class="friscora-layout">
+          <div class="friscora-video">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/images/projects/friscora/1.png"
+              aria-label="Screen recording of the Friscora app"
+            >
+              <source src="assets/media/friscora-demo.m4v" type="video/mp4" />
+              Your browser does not support embedded video. Try Safari or Chrome, or open the
+              <a href="https://github.com/niyazovdaulet/Friscora---Financial-Budget-App">GitHub repo</a>.
+            </video>
+          </div>
+          <aside class="friscora-aside" aria-labelledby="friscora-aside-title">
+            <h3 id="friscora-aside-title" class="friscora-aside-title">Built for clarity</h3>
+            <p>
+              Native <strong>SwiftUI</strong> with an MVVM-oriented structure, <strong>iOS 18+</strong>,
+              local-first data with optional <strong>iCloud Key-Value</strong>, and Firebase only where
+              the product needs it (schedule sharing, feedback)—not as a generic “AI backend.”
+            </p>
+            <p>
+              Statement categorization is deterministic on device; the codebase does not ship an
+              in-app LLM or cloud ML over your transactions.
+            </p>
+            <div class="badge-row">
+              <span class="badge">SwiftUI</span>
+              <span class="badge">MVVM</span>
+              <span class="badge">iOS 18</span>
+              <span class="badge">Firebase</span>
+              <span class="badge">Unit tests</span>
+            </div>
+            <div class="friscora-actions">
+              <a
+                class="btn-github"
+                href="https://github.com/niyazovdaulet/Friscora---Financial-Budget-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub</a
+              >
+              <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Landing/" target="_blank" rel="noopener noreferrer">App Store &amp; landing</a>
+              <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Support/" target="_blank" rel="noopener noreferrer">Support</a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="friscora-thumbs" aria-label="Friscora screenshots">
+          <img src="assets/images/projects/friscora/1.png" alt="Friscora dashboard" loading="lazy" width="400" height="867" />
+          <img src="assets/images/projects/friscora/2.png" alt="Friscora analytics" loading="lazy" width="400" height="867" />
+          <img src="assets/images/projects/friscora/3.png" alt="Friscora add flow" loading="lazy" width="400" height="867" />
+        </div>
+      </section>
+
       <section class="section featured" id="featured" aria-labelledby="featured-heading">
         <div class="section-head">
           <h2 id="featured-heading">Featured</h2>
-          <p>Recent shipped work and flagship apps.</p>
+          <p>
+            <strong>AnotherLife</strong> — habit tracking on the App Store. Gallery below; a full app
+            demo recording will go here next.
+          </p>
         </div>
 
-        <div class="carousel-shell">
-          <div class="carousel">
-            <button type="button" class="carousel-nav" id="carouselPrev" aria-label="Previous slide">
-              ‹
-            </button>
-            <div class="carousel-viewport">
-              <div class="carousel-track" id="carouselTrack">
-                <!-- Slide 1: Friscora -->
-                <article class="carousel-slide" style="--slide-bg: url(assets/images/projects/friscora/1.png)">
-                  <div class="slide-visual">
-                    <div class="slide-visual-inner">
-                      <img src="assets/images/projects/friscora/1.png" alt="Friscora dashboard screenshot" width="400" height="867" />
-                      <img src="assets/images/projects/friscora/2.png" alt="Friscora screen" width="400" height="867" />
-                      <img src="assets/images/projects/friscora/3.png" alt="Friscora screen" width="400" height="867" />
-                    </div>
-                  </div>
-                  <div class="slide-body">
-                    <h3>Friscora</h3>
-                    <p>
-                      Native SwiftUI finance app: income, expenses, goals, analytics, work schedule,
-                      optional statement import with on-device rule-based categorization—no in-app AI
-                      assistant.
-                    </p>
-                    <p>
-                      Optional Firebase Auth and Firestore power schedule sharing; most data stays
-                      local with App Store–aligned privacy practices.
-                    </p>
-                    <div class="slide-actions">
-                      <a
-                        class="btn-github"
-                        href="https://github.com/niyazovdaulet/Friscora---Financial-Budget-App"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                        GitHub</a
-                      >
-                      <a class="btn-muted" href="https://niyazovdaulet.github.io/Friscora-Landing/" target="_blank" rel="noopener noreferrer">App Store &amp; info</a>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- Slide 2: AnotherLife -->
-                <article class="carousel-slide" style="--slide-bg: url(assets/images/projects/anotherlife/1.webp)">
-                  <div class="slide-visual">
-                    <div class="slide-visual-inner">
-                      <img src="assets/images/projects/anotherlife/1.webp" alt="AnotherLife habit tracking" width="400" height="867" />
-                      <img src="assets/images/projects/anotherlife/2.webp" alt="AnotherLife screen" width="400" height="867" />
-                      <img src="assets/images/projects/anotherlife/5.webp" alt="AnotherLife screen" width="400" height="867" />
-                    </div>
-                  </div>
-                  <div class="slide-body">
-                    <h3>AnotherLife</h3>
-                    <p>
-                      Habit tracking on iPhone: clarity, streaks, stats, challenges, and leaderboards.
-                      Shipped on the App Store with Firebase-backed sync; open-source README describes
-                      core MVVM and local persistence patterns.
-                    </p>
-                    <p>
-                      Built with SwiftUI; emphasizes a modern UI, insights, and long-term engagement.
-                    </p>
-                    <div class="slide-actions">
-                      <a
-                        class="btn-github"
-                        href="https://github.com/niyazovdaulet/AnotherLife"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                        GitHub</a
-                      >
-                      <a
-                        class="btn-muted"
-                        href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >App Store</a
-                      >
-                      <a class="btn-muted" href="https://niyazovdaulet.github.io/anotherlife-landing/" target="_blank" rel="noopener noreferrer">Landing</a>
-                    </div>
-                  </div>
-                </article>
+        <article class="anotherlife-highlight">
+          <div class="anotherlife-highlight-top">
+            <div class="anotherlife-shots">
+              <img src="assets/images/projects/anotherlife/1.webp" alt="AnotherLife habits" loading="lazy" width="400" height="867" />
+              <img src="assets/images/projects/anotherlife/2.webp" alt="AnotherLife screen" loading="lazy" width="400" height="867" />
+              <img src="assets/images/projects/anotherlife/5.webp" alt="AnotherLife insights" loading="lazy" width="400" height="867" />
+            </div>
+            <div class="anotherlife-copy">
+              <h3>AnotherLife</h3>
+              <p>
+                Build better habits with clarity, streaks, stats, challenges, and leaderboards. Shipped
+                on the App Store with Firebase-backed sync; the open README highlights MVVM and core
+                persistence patterns.
+              </p>
+              <p>SwiftUI throughout, with a modern UI and long-term engagement in mind.</p>
+              <div class="badge-row">
+                <span class="badge">SwiftUI</span>
+                <span class="badge">MVVM</span>
+                <span class="badge">App Store</span>
+                <span class="badge">Firebase</span>
+              </div>
+              <div class="anotherlife-actions">
+                <a
+                  class="btn-github"
+                  href="https://github.com/niyazovdaulet/AnotherLife"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub</a
+                >
+                <a
+                  class="btn-muted"
+                  href="https://apps.apple.com/us/app/anotherlife-habit-tracker/id6752122842"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >App Store</a
+                >
+                <a class="btn-muted" href="https://niyazovdaulet.github.io/anotherlife-landing/" target="_blank" rel="noopener noreferrer">Landing</a>
               </div>
             </div>
-            <button type="button" class="carousel-nav" id="carouselNext" aria-label="Next slide">
-              ›
-            </button>
           </div>
-          <div class="carousel-dots" role="tablist" aria-label="Choose slide">
-            <button type="button" aria-label="Friscora" aria-current="true"></button>
-            <button type="button" aria-label="AnotherLife" aria-current="false"></button>
+
+          <div class="anotherlife-demo-wrap">
+            <!-- When your AnotherLife recording is ready: transcode to ~720p M4V/MP4, save as
+                 assets/media/anotherlife-demo.m4v, then replace the placeholder below with:
+            <video controls playsinline preload="metadata" poster="assets/images/projects/anotherlife/1.webp" class="anotherlife-demo-video">
+              <source src="assets/media/anotherlife-demo.m4v" type="video/mp4" />
+            </video>
+            -->
+            <div class="anotherlife-demo-placeholder" role="status">
+              <span class="anotherlife-demo-placeholder-icon" aria-hidden="true">▶</span>
+              <p><strong>AnotherLife</strong> — app demo video coming soon.</p>
+            </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section" id="work" aria-labelledby="work-heading">
